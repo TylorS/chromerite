@@ -1,0 +1,26 @@
+{
+  "name": "@browserite/launch",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch",
+    "clean": "tsc --build --clean",
+    "lint": "biome lint  --fix",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Tylor Steinberger <tlsteinberger167@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@effect/platform": "^0.77.6",
+    "effect": "^3.13.6"
+  }
+}

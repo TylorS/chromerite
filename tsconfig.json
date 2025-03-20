@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "ES2024",
+      "DOM"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "sourceMap": true,
+    "composite": true,
+    "declarationMap": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@browserite/cdp": ["./packages/cdp/src/index.ts"],
+      "@browserite/cdp/*": ["./packages/cdp/src/*"],
+      "@browserite/launch": ["./packages/launch/src/index.ts"],
+      "@browserite/launch/*": ["./packages/launch/src/*"],
+      "@browserite/protocol": ["./packages/protocol/src/index.ts"],
+      "@browserite/protocol/*": ["./packages/protocol/src/*"],
+      "@browserite/server": ["packages/server/src/router.ts"],
+      "@browserite/server/*": ["./packages/server/src/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/cdp"
+    },
+    {
+      "path": "./packages/launch"
+    },
+    {
+      "path": "./packages/protocol"
+    },
+    {
+      "path": "./packages/server"
+    }
+  ]
+}

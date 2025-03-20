@@ -1,0 +1,26 @@
+{
+  "name": "@browserite/server",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch",
+    "clean": "tsc --build --clean",
+    "lint": "biome lint  --fix",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Tylor Steinberger <tlsteinberger167@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@browserite/cdp": "workspace:*",
+    "@browserite/launch": "workspace:*",
+    "@browserite/protocol": "workspace:*",
+    "@effect/platform": "^0.77.6",
+    "@effect/rpc": "^0.52.6",
+    "@effect/rpc-http": "^0.50.6",
+    "@typed/id": "^0.17.1",
+    "effect": "^3.13.6"
+  }
+}
